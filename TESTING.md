@@ -19,8 +19,8 @@ Not run means no result is claimed. Missing pages remain assignment work.
 | T12 | Toggle theme on each page; reload; check contrast and focus. | Accessible theme state persists as designed. | Not run; theme feature absent. |
 | T13 | Inspect GitHub Settings > Pages. | Public repo, main branch, root folder, HTTPS URL. | Pass: browser settings confirmed main and / (root), public repository, on October 29, 2026. |
 | T14 | After push, open live Home and load CSS/JS. | Current Home renders with its stylesheet and navigation script. | Not run. |
-| T15 | Parse scripts/auto-push.ps1, parse tasks.json, run git diff --check. | No syntax or whitespace errors. | Pass on October 29, 2026. |
-| T16 | Save a website edit with watcher active, wait ten quiet seconds, inspect origin. | One normal commit and push; no unrelated files included. | Not run. |
+| T15 | Parse scripts/auto-push.ps1, parse tasks.json, run git diff --check. | No syntax or whitespace errors. | Pass on October 29, 2026 before removal; watcher and task subsequently removed at student's request. |
+| T16 | Review AGENTS.md automatic push rule. | Codex is instructed to test, commit, and push without repeated approval. | Pass: rule reviewed October 29, 2026; no background watcher retained. |
 | T17 | Review site in VS Code Live Preview at phone width and with keyboard. | Layout and controls function. | Not run. |
 
 Retain any original failures and append retest results when these tests run.

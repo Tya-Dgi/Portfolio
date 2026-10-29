@@ -80,8 +80,9 @@ Update this file when the student changes the design.
   unperformed checks passed.
 - After each completed task and review, make a small commit with a clear message.
   The student authorized automatic pushes on October 29, 2026; push completed
-  changes without requesting approval again. Saved website edits may also be
-  committed and pushed by scripts/auto-push.ps1 while its watcher is running.
+  changes without requesting approval again. After making changes in this
+  project, test the affected work, commit it with a clear message, and push to
+  origin/main automatically. Report any failed checks or blocked pushes honestly.
 - Keep a genuine history of steady work over multiple days. Do not fabricate
   dates or split artificial commits to imitate that history.
 - Undo changes with a revert commit; never use reset or force push.

@@ -18,9 +18,18 @@ Not run means no result is claimed. Missing pages remain assignment work.
 | T11 | Open Console on each page, reload, and exercise controls. | No browser console errors. | Not run. |
 | T12 | Toggle theme on each page; reload; check contrast and focus. | Accessible theme state persists as designed. | Not run; theme feature absent. |
 | T13 | Inspect GitHub Settings > Pages. | Public repo, main branch, root folder, HTTPS URL. | Pass: browser settings confirmed main and / (root), public repository, on October 29, 2026. |
-| T14 | After push, open live Home and load CSS/JS. | Current Home renders with its stylesheet and navigation script. | Not run. |
+| T14 | After push, open live Home and load CSS/JS. | Current Home renders with its stylesheet and navigation script. | Initial failure October 29, 2026: previous deployment still served; CSS/JS returned 404. Retest: current Home, CSS, and JS return HTTP 200 after deployment #3 succeeded. Visual/interactivity checks not yet run. |
 | T15 | Parse scripts/auto-push.ps1, parse tasks.json, run git diff --check. | No syntax or whitespace errors. | Pass on October 29, 2026 before removal; watcher and task subsequently removed at student's request. |
 | T16 | Review AGENTS.md automatic push rule. | Codex is instructed to test, commit, and push without repeated approval. | Pass: rule reviewed October 29, 2026; no background watcher retained. |
 | T17 | Review site in VS Code Live Preview at phone width and with keyboard. | Layout and controls function. | Not run. |
 
 Retain any original failures and append retest results when these tests run.
+
+## Deployment investigation — October 29, 2026
+
+Run #2 built successfully, but its deploy job was canceled because a higher
+priority request for main existed. Its report-build-status job kept run #3
+waiting. Requested cancellation of obsolete run #2; it completed as canceled.
+Run #3 (ea69ae0) then completed build, deploy, and report-build-status successfully.
+Verified the live Home and both linked CSS/JS files return HTTP 200. No website
+code change was needed. This does not claim the remaining browser tests passed.

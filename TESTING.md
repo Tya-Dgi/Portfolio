@@ -3,6 +3,16 @@
 Run browser tests against https://tya-dgi.github.io/Portfolio/ unless local is specified.
 Not run means no result is claimed. Missing pages remain assignment work.
 
+## Cooking volunteer content — October 29, 2026
+
+| ID | Test and steps | Expected result | Actual result |
+| --- | --- | --- | --- |
+| V01 | Inspect About and Skills content and cross-link fragment targets. | Supplied volunteer facts present; links point to existing section IDs; one h1 per page. | Pass by content review and markup checks; git diff --check passed. |
+| V02 | Review both additions in Live Preview and live site at phone/laptop sizes using keyboard. | Readable cards without overflow; visible focus and working cross-links. | Not run. |
+
+No organization name, year, volunteer hours, or formal cooking qualification was
+invented. Browser layout and keyboard checks remain outstanding for this change.
+
 ## About, Skills, Contact addition — October 29, 2026
 
 | ID | Test and steps | Expected result | Actual result |

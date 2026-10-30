@@ -25,7 +25,9 @@ are symbolic graphics, not screenshots of the student's papers. Original project
 documents still need to be supplied. About, Skills, and Contact now include the
 student's background, CAD proficiency, research/writing experience, and approved
 NJIT email link, with responsive pastel cards and CSS illustrations. All five
-pages are linked from every navigation menu. Full browser and
+pages are linked from every navigation menu. About also shares the student's
+summer cooking volunteer experience with children in grades 1–8, linked to
+cooking and teaching cards on Skills. Full browser and
 live-site accessibility testing are still outstanding.
 
 ## GitHub Pages

@@ -35,7 +35,7 @@ Retain any original failures and append retest results when these tests run.
 | G04 | Open live Projects at phone/laptop sizes; play multiple rounds. | No overflow; controls/results stay readable and scores accumulate. | Not run. |
 | G05 | Disable JavaScript and reload Projects. | Explanation appears; inactive game controls stay hidden; navigation remains usable. | Not run. |
 | G06 | Reload or leave and return to Projects. | Scores start at zero. | Not run. |
-| G07 | Load deployed projects.html and js/game.js. | Both return HTTP 200 with current content. | Not run. |
+| G07 | Load deployed projects.html and js/game.js. | Both return HTTP 200 with current content. | Pass October 29, 2026: deployment of 78aa195 succeeded; Projects returned HTTP 200 (3891 bytes) and game.js HTTP 200 (1527 bytes). |
 
 VS Code Live Preview, browser keyboard/phone checks, console inspection, and
 Lighthouse have not been performed for this change. Writing project images

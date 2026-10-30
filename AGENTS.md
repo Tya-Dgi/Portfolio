@@ -54,6 +54,11 @@ The game uses a pastel arcade design with original SVG rock, paper, and scissors
 art, a dark plum scoreboard, a move arena, and outcome colors. Preserve visible
 focus, text result announcements, mobile layouts, and reduced-motion support.
 
+About, Skills, and Contact extend this vibrant pastel style with CSS illustrations,
+bold typography, rounded story cards, and plum fact panels. Use the student's
+approved NJIT email as a mailto link; no contact form or delivery claim is needed.
+Show CAD proficiency as comfortable with class assignments, not invented scores.
+
 ## Technical rules
 
 - Use plain HTML5, CSS, and JavaScript only. No React, Vue, Tailwind, Bootstrap,

@@ -3,6 +3,21 @@
 Run browser tests against https://tya-dgi.github.io/Portfolio/ unless local is specified.
 Not run means no result is claimed. Missing pages remain assignment work.
 
+## About, Skills, Contact addition — October 29, 2026
+
+| ID | Test and steps | Expected result | Actual result |
+| --- | --- | --- | --- |
+| P01 | Inspect navigation markup on all five pages; check each local destination and asset exists. | All 25 navigation destinations present; no missing referenced files. | Pass by filesystem/markup check. Browser clicks not run. |
+| P02 | Count h1 elements in all five pages. | Exactly one per page. | Pass by markup check. |
+| P03 | Check Contact mail link against approved email. | mailto:nk788@njit.edu, no claim of message delivery. | Pass by code review. External email app launch not tested. |
+| P04 | Test each new page at 390 × 844 and 1366 × 768, using Tab and Enter. | Responsive layout, visible focus, working menu and links, no overflow. | Not run. |
+| P05 | Run Lighthouse Accessibility and inspect console on each new live page. | Accessibility at least 90; no console errors. | Not run; no scores claimed. |
+| P06 | Fetch all five live pages after deployment. | HTTP 200; new pages and all navigation links present. | Not run. |
+
+Live Preview and phone/keyboard browser checks for these pages remain outstanding.
+Earlier notes about missing About, Skills, and Contact pages describe prior state;
+these three pages now exist. Site-wide browser tests still need to be executed.
+
 | ID | Test and steps | Expected result | Actual result |
 | --- | --- | --- | --- |
 | T01 | On each of the five pages, click all five navigation links. | All 25 links reach the correct pages. | Not run; four pages do not exist yet. |

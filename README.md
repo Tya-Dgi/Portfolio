@@ -22,8 +22,10 @@ The Projects page also has expandable writing-project cards with original SVG
 concept illustrations. Click a card or focus it and press Enter to reveal its
 overview; these native HTML controls also work without JavaScript. Illustrations
 are symbolic graphics, not screenshots of the student's papers. Original project
-documents still need to be supplied. About, Skills, and Contact remain future
-tasks, and their navigation labels are currently inactive. Full browser and
+documents still need to be supplied. About, Skills, and Contact now include the
+student's background, CAD proficiency, research/writing experience, and approved
+NJIT email link, with responsive pastel cards and CSS illustrations. All five
+pages are linked from every navigation menu. Full browser and
 live-site accessibility testing are still outstanding.
 
 ## GitHub Pages

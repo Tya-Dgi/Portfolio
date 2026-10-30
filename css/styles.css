@@ -131,3 +131,80 @@ footer span { padding-inline: .5rem; color: var(--purple); }
   .direction, .cards { grid-template-columns: 1fr; }
   .direction { gap: .75rem; }
 }
+
+/* Shared layouts for About, Skills, and Contact. Art is drawn with CSS. */
+.profile-page { padding-block: 4rem; }
+.profile-hero { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 3rem; padding-bottom: 4rem; }
+.profile-hero h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
+.identity-art, .toolkit-art, .mail-art { position: relative; width: 100%; max-width: 400px; aspect-ratio: 1; justify-self: center; }
+.identity-art { display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 48% 48% 32% 32%; background: #ede3fa; border: 1px solid #d8bff0; box-shadow: 12px 12px 0 #fbe4ec; transform: rotate(3deg); }
+.orbit-word { font-size: .7rem; letter-spacing: .2em; color: var(--purple); font-weight: 750; }
+.monogram { font-size: clamp(4rem, 10vw, 7rem); font-weight: 850; letter-spacing: -.1em; line-height: 1.6; }
+.monogram span { display: inline-block; color: var(--purple); font-size: .7em; vertical-align: middle; margin-inline: .2em; }
+.identity-sticker { background: #30233d; color: white; padding: .5rem 1.3rem; border-radius: 2rem; letter-spacing: .15em; font-size: .75rem; transform: rotate(-7deg); }
+.identity-note { color: var(--muted); font-size: .85rem; margin-top: 1rem; }
+.fact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #30233d; color: white; border-radius: 1.5rem; padding: 2rem 1rem; gap: 1rem; }
+.fact-grid > div { display: flex; flex-direction: column; text-align: center; }
+.fact-grid strong { color: #d8bff0; font-size: 3.5rem; line-height: 1.2; letter-spacing: -.06em; }
+.fact-grid span { font-size: .85rem; }
+.profile-section { padding-block: 3rem; }
+.story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+.story-card { padding: 1.8rem; border-radius: 1.5rem; border: 1px solid #30233d12; }
+.story-card h3 { font-size: 1.5rem; letter-spacing: -.04em; }
+.story-card p:not(.card-label) { color: var(--muted); }
+.story-card a { font-weight: 650; }
+.lavender { background: #ede3fa; }
+.blush { background: #fbe4ec; }
+.sage { background: #e5f0e4; }
+.story-symbol, .belt-art, .first-aid-art { display: grid; place-items: center; width: 70px; height: 70px; background: #ffffffa0; border-radius: 1.2rem; font-size: 2.6rem; color: var(--purple); margin-bottom: 2rem; }
+.first-aid-art { font-weight: 850; }
+.page-invite { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 2rem; background: white; border: 1px solid #d8bff0; border-radius: 1.5rem; margin-top: 2rem; }
+.page-invite h2 { margin-bottom: 0; }
+.page-invite .button { flex-shrink: 0; margin-top: 0; }
+.toolkit-art { background: #ede3fa; border-radius: 2rem; overflow: hidden; border: 1px solid #d8bff0; }
+.toolkit-grid { position: absolute; inset: 0; background-image: linear-gradient(#7040a018 1px, transparent 1px), linear-gradient(90deg, #7040a018 1px, transparent 1px); background-size: 25px 25px; }
+.toolkit-shape { position: absolute; width: 42%; height: 42%; border: 3px solid var(--purple); border-radius: 1rem; transform: rotate(-25deg) skew(10deg); }
+.shape-back { top: 19%; left: 23%; background: #d8bff0; }
+.shape-front { top: 33%; left: 36%; background: #faf7ff; box-shadow: 12px 12px 0 #7040a0; }
+.toolkit-caption { position: absolute; bottom: 7%; width: 100%; text-align: center; font-size: .65rem; font-weight: 750; letter-spacing: .12em; color: var(--purple); }
+.toolkit-spark { position: absolute; top: 4%; right: 9%; color: var(--purple); font-size: 3rem; }
+.design-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+.tool-card { display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem; background: white; border: 1px solid #d8bff0; border-radius: 1.5rem; box-shadow: 0 8px 0 #ede3fa; }
+.tool-card h3 { margin: .5rem 0; font-size: 1.6rem; }
+.tool-card p:last-child { color: var(--muted); }
+.tool-letter { position: relative; flex-shrink: 0; display: grid; place-items: center; width: 80px; height: 95px; border-radius: 1rem; background: #ede3fa; color: var(--purple); font-size: 3.8rem; font-weight: 850; transform: rotate(-5deg); }
+.tool-letter span { position: absolute; bottom: -10px; right: -5px; font-size: 2rem; }
+.inventor-letter { background: #e5f0e4; transform: rotate(5deg); }
+.proficiency { display: inline-block; margin: .5rem 0; padding: .3rem .6rem; border-radius: .5rem; background: #ede3fa; color: var(--purple); font-size: .8rem; font-weight: 650; }
+.mail-art { background: #fbe4ec; border-radius: 50%; }
+.mail-letter { position: absolute; top: 15%; left: 23%; width: 55%; height: 60%; padding: 1.2rem; border-radius: .6rem; background: white; border: 2px solid var(--purple); transform: rotate(-8deg); }
+.mail-letter > span { font-weight: 750; font-size: .75rem; letter-spacing: .08em; color: var(--purple); }
+.mail-letter i { display: block; height: 3px; width: 80%; margin-top: 1rem; background: #d8bff0; }
+.mail-letter b { display: block; font-size: 3rem; color: var(--purple); }
+.mail-envelope { position: absolute; top: 45%; left: 15%; width: 72%; height: 38%; background: linear-gradient(150deg, transparent 49%, #7040a0 50%, #7040a0 51%, transparent 52%), linear-gradient(210deg, #d8bff0 49%, #7040a0 50%, #7040a0 51%, #ede3fa 52%); border: 2px solid var(--purple); border-radius: .6rem; transform: rotate(-8deg); box-shadow: 5px 8px 0 #7040a020; }
+.mail-spark { position: absolute; right: 5%; top: 3%; font-size: 3.5rem; color: var(--purple); }
+.mail-note { position: absolute; bottom: 3%; width: 100%; text-align: center; color: var(--muted); font-size: .75rem; }
+.contact-panel { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); background: #ede3fa; border: 1px solid #d8bff0; border-radius: 1.5rem; }
+.contact-panel h2 { font-size: 2.5rem; margin-block: .5rem 1.5rem; }
+.email-address { font-size: clamp(1.25rem, 3vw, 2rem); font-weight: 750; overflow-wrap: anywhere; }
+.contact-panel p:not(.card-label) { color: var(--muted); }
+.contact-action { flex-shrink: 0; }
+.contact-action p { font-size: .8rem; }
+.topic-list { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
+.topic-list span { padding: .65rem 1rem; border: 1px solid #d8bff0; background: white; color: var(--purple); border-radius: 2rem; }
+.topic-list span:nth-child(even) { background: #e5f0e4; transform: rotate(-2deg); }
+@media (max-width: 850px) {
+  .profile-hero { grid-template-columns: 1fr; }
+  .identity-art, .toolkit-art, .mail-art { max-width: 320px; }
+  .story-grid { grid-template-columns: 1fr; }
+  .design-tools { grid-template-columns: 1fr; }
+  .page-invite, .contact-panel { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 450px) {
+  .profile-page { padding-block: 2rem; }
+  .fact-grid { gap: .5rem; padding: 1.5rem .5rem; }
+  .fact-grid strong { font-size: 2.5rem; }
+  .fact-grid span { font-size: .7rem; }
+  .tool-card { padding: 1.25rem; gap: 1rem; }
+  .tool-letter { width: 55px; height: 70px; font-size: 2.7rem; }
+}

@@ -13,6 +13,9 @@ No installation, build step, or server is required.
 The Home page uses a pastel-purple spring palette and a responsive navigation
 menu. Projects includes a playable Rock Paper Scissors game with random computer
 moves, win/loss/tie scores, a reset button, and accessible result announcements.
+Its pastel arcade design includes original SVG move illustrations, a scoreboard,
+a versus arena that updates after each round, selected move cards, and outcome
+colors. Hover movement respects the reduced-motion preference.
 The browser game was developed with Codex assistance, based on the student's
 class project. It uses plain JavaScript and works locally without a server.
 The Projects page also has expandable writing-project cards with original SVG

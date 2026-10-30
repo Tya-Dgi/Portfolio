@@ -50,6 +50,10 @@ Research writing cards use original pastel SVG concept illustrations and native
 details/summary controls to reveal project overviews. Illustrations are symbolic,
 not screenshots of student work. Keep descriptions grounded in supplied facts.
 
+The game uses a pastel arcade design with original SVG rock, paper, and scissors
+art, a dark plum scoreboard, a move arena, and outcome colors. Preserve visible
+focus, text result announcements, mobile layouts, and reduced-motion support.
+
 ## Technical rules
 
 - Use plain HTML5, CSS, and JavaScript only. No React, Vue, Tailwind, Bootstrap,

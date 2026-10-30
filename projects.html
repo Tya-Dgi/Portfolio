@@ -29,24 +29,35 @@
     <h1>Things I've explored.</h1>
     <p class="intro">Class projects in writing, research, and programming.</p>
     <section class="game-panel" aria-labelledby="game-heading">
-      <p class="card-label">Play a class project</p>
-      <h2 id="game-heading">Rock, Paper, Scissors</h2>
-      <p>I wrote a Rock Paper Scissors game for class. This browser version, developed with Codex assistance, lets you play against the computer.</p>
-      <p id="game-rules">Rock beats scissors. Scissors beats paper. Paper beats rock. Choose a move to play a round!</p>
+      <div class="game-heading-row"><p class="arcade-tag"><span aria-hidden="true">✦</span> THE MINI ARCADE</p><span class="game-edition">01 / CLASS PROJECT</span></div>
+      <h2 id="game-heading">Small game.<br><span>Big showdown.</span></h2>
+      <p class="game-intro">Rock. Paper. Scissors. You know the rules.<br>Think you can outplay the computer?</p>
+      <p id="game-rules" class="rule-strip"><span>Rock beats scissors</span><span>Paper beats rock</span><span>Scissors beats paper</span></p>
       <noscript><p>Enable JavaScript to play this game.</p></noscript>
       <div id="game-controls" hidden>
-        <div class="game-choices" role="group" aria-label="Choose your move" aria-describedby="game-rules">
-          <button type="button" class="choice-button" data-choice="rock"><span aria-hidden="true">&#9994;</span>Rock</button>
-          <button type="button" class="choice-button" data-choice="paper"><span aria-hidden="true">&#9995;</span>Paper</button>
-          <button type="button" class="choice-button" data-choice="scissors"><span aria-hidden="true">&#9996;</span>Scissors</button>
+        <div class="scoreboard" aria-label="Scoreboard">
+          <div><span>YOUR WINS</span><strong id="player-score">0</strong></div>
+          <div><span>TIES</span><strong id="tie-score">0</strong></div>
+          <div><span>COMPUTER WINS</span><strong id="computer-score">0</strong></div>
+        </div>
+        <div class="game-arena" aria-hidden="true">
+          <div class="arena-side"><span class="arena-label">YOU</span><div class="move-orbit" id="player-orbit" data-move="ready"><img id="player-move" src="images/game-ready.svg" alt="" width="180" height="180"></div><span id="player-move-name">Your move</span></div>
+          <div class="versus">VS<span id="round-number">ROUND 01</span></div>
+          <div class="arena-side"><span class="arena-label">COMPUTER</span><div class="move-orbit" id="computer-orbit" data-move="ready"><img id="computer-move" src="images/game-ready.svg" alt="" width="180" height="180"></div><span id="computer-move-name">The challenger</span></div>
         </div>
         <div class="game-status" role="status" aria-live="polite" aria-atomic="true">
-          <p id="game-result">Your first round is waiting.</p>
-          <p id="game-score">You: 0 · Computer: 0 · Ties: 0</p>
+          <p id="game-result">Your move. Make it a good one.</p>
+          <p id="game-score" class="sr-only">You: 0 · Computer: 0 · Ties: 0</p>
         </div>
-        <button type="button" class="reset-button" id="reset-game">Reset scores</button>
-        <p class="game-note">Play as many rounds as you like. Scores reset when you reload or leave this page.</p>
+        <p class="pick-label">PICK YOUR PLAY <span aria-hidden="true">↓</span></p>
+        <div class="game-choices" role="group" aria-label="Choose your move" aria-describedby="game-rules">
+          <button type="button" class="choice-button" data-choice="rock"><span class="move-number" aria-hidden="true">01</span><img src="images/game-rock.svg" alt="" width="120" height="120"><strong>Rock</strong><span class="move-caption">The solid choice</span></button>
+          <button type="button" class="choice-button" data-choice="paper"><span class="move-number" aria-hidden="true">02</span><img src="images/game-paper.svg" alt="" width="120" height="120"><strong>Paper</strong><span class="move-caption">A smooth operator</span></button>
+          <button type="button" class="choice-button" data-choice="scissors"><span class="move-number" aria-hidden="true">03</span><img src="images/game-scissors.svg" alt="" width="120" height="120"><strong>Scissors</strong><span class="move-caption">Stay sharp</span></button>
+        </div>
+        <div class="game-bottom"><p class="game-note">No limit. No pressure. Just one more round.<br>Scores last until you leave or reload.</p><button type="button" class="reset-button" id="reset-game">Reset scores <span aria-hidden="true">↺</span></button></div>
       </div>
+      <p class="game-credit">Based on my Rock Paper Scissors class project. Browser version developed with Codex assistance.</p>
     </section>
     <section aria-labelledby="writing-heading">
       <h2 id="writing-heading">Research &amp; writing</h2>

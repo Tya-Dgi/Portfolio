@@ -27,6 +27,19 @@ Retain any original failures and append retest results when these tests run.
 
 ## Game test cases
 
+### Arcade visual update — October 29, 2026
+
+| ID | Test and steps | Expected result | Actual result |
+| --- | --- | --- | --- |
+| A01 | Simulate all nine matchups in updated game.js; inspect outcome and image URLs; reset each. | Correct outcome, player/computer illustrations, and cleared state. | Pass: 9/9 in JavaScript VM with simulated DOM. |
+| A02 | Parse four game SVGs; inspect sizes; run git diff --check. | Valid XML, images below 500 KB, no whitespace errors. | Pass: all SVGs below 1 KB. |
+| A03 | Open local projects.html in Chrome; Tab to Rock and press Enter; inspect screenshot. | Styled artwork loads, result and arena update, visible keyboard focus. | Pass: Rock versus Scissors displayed a win, updated art, and visible focus. Local file browser check, not VS Code Live Preview. |
+| A04 | Review phone-sized game and reduced-motion behavior on live site. | No overflow; readable controls; hover movement disabled for reduced motion. | Not run. |
+| A05 | Fetch deployed Projects, updated game.js, CSS, and four SVGs. | Current markup/assets served with HTTP 200. | Not run. |
+
+VS Code Live Preview, phone viewport, live keyboard checks, console inspection,
+and Lighthouse for this visual update remain outstanding.
+
 ## Research card checks — October 29, 2026
 
 | ID | Test and steps | Expected result | Actual result |

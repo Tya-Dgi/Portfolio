@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nitya Kudugi's class projects, research writing, and a playable Rock Paper Scissors game.">
+  <title>Projects | Nitya Kudugi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/game.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Nitya Kudugi home">NK<span aria-hidden="true">&#10047;</span></a>
+    <nav aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+      <ul id="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><span>About <span class="sr-only">(coming soon)</span></span></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><span>Skills <span class="sr-only">(coming soon)</span></span></li>
+        <li><span>Contact <span class="sr-only">(coming soon)</span></span></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="projects-page">
+    <p class="eyebrow">Learning through projects</p>
+    <h1>Things I've explored.</h1>
+    <p class="intro">Class projects in writing, research, and programming.</p>
+    <section class="game-panel" aria-labelledby="game-heading">
+      <p class="card-label">Play a class project</p>
+      <h2 id="game-heading">Rock, Paper, Scissors</h2>
+      <p>I wrote a Rock Paper Scissors game for class. This browser version, developed with Codex assistance, lets you play against the computer.</p>
+      <p id="game-rules">Rock beats scissors. Scissors beats paper. Paper beats rock. Choose a move to play a round!</p>
+      <noscript><p>Enable JavaScript to play this game.</p></noscript>
+      <div id="game-controls" hidden>
+        <div class="game-choices" role="group" aria-label="Choose your move" aria-describedby="game-rules">
+          <button type="button" class="choice-button" data-choice="rock"><span aria-hidden="true">&#9994;</span>Rock</button>
+          <button type="button" class="choice-button" data-choice="paper"><span aria-hidden="true">&#9995;</span>Paper</button>
+          <button type="button" class="choice-button" data-choice="scissors"><span aria-hidden="true">&#9996;</span>Scissors</button>
+        </div>
+        <div class="game-status" role="status" aria-live="polite" aria-atomic="true">
+          <p id="game-result">Your first round is waiting.</p>
+          <p id="game-score">You: 0 · Computer: 0 · Ties: 0</p>
+        </div>
+        <button type="button" class="reset-button" id="reset-game">Reset scores</button>
+        <p class="game-note">Play as many rounds as you like. Scores reset when you reload or leave this page.</p>
+      </div>
+    </section>
+    <section aria-labelledby="writing-heading">
+      <h2 id="writing-heading">Research &amp; writing</h2>
+      <div class="cards writing-cards">
+        <article class="card education">
+          <p class="card-label">Essay</p>
+          <h3>AI in the Pharmaceutical Industry</h3>
+          <p>An essay exploring the implications of using artificial intelligence in the pharmaceutical industry.</p>
+        </article>
+        <article class="card goal">
+          <p class="card-label">Research white paper</p>
+          <h3>Phantom Limb Pain</h3>
+          <p>A research project in which I explored approaches to phantom limb pain and narrowed the discussion to three: mirror therapy, neuroprosthetics, and virtual reality rehabilitation.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><p>Nitya Kudugi <span aria-hidden="true">&#10047;</span> Personal portfolio</p></footer>
+</body>
+</html>

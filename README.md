@@ -11,9 +11,14 @@ No installation, build step, or server is required.
 ## Progress
 
 The Home page uses a pastel-purple spring palette and a responsive navigation
-menu. About, Projects, Skills, and Contact will be added in subsequent tasks;
-their navigation labels are currently inactive. A second JavaScript interaction,
-and full live-site testing are still outstanding.
+menu. Projects includes a playable Rock Paper Scissors game with random computer
+moves, win/loss/tie scores, a reset button, and accessible result announcements.
+The browser game was developed with Codex assistance, based on the student's
+class project. It uses plain JavaScript and works locally without a server.
+The Projects page also describes two writing projects; original project images
+and documents still need to be supplied. About, Skills, and Contact remain future
+tasks, and their navigation labels are currently inactive. Full browser and
+live-site accessibility testing are still outstanding.
 
 ## GitHub Pages
 

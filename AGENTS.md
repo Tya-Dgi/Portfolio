@@ -64,8 +64,9 @@ Update this file when the student changes the design.
 - Make links, buttons, and form controls keyboard accessible with Tab and Enter.
   Use native controls, meaningful link text, and labels for form fields.
 - Implement at least two JavaScript interactions. A responsive navigation menu
-  that opens and closes is mandatory; the proposed second feature is a light/dark
-  theme toggle. If another feature replaces it, update this file.
+  that opens and closes is mandatory; the second feature is a playable Rock
+  Paper Scissors game on projects.html, with random computer moves, scores,
+  result announcements, and a reset button (replaces the proposed theme toggle).
 - Keep menu state accessible, including an accurate `aria-expanded` value.
   Ensure any theme meets contrast requirements. Resolve browser console errors.
 

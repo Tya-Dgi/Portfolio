@@ -27,6 +27,19 @@ Retain any original failures and append retest results when these tests run.
 
 ## Game test cases
 
+## Research card checks — October 29, 2026
+
+| ID | Test and steps | Expected result | Actual result |
+| --- | --- | --- | --- |
+| R01 | Parse both SVG assets as XML; check sizes and details/summary counts. | Valid SVGs under 500 KB each; two native disclosure controls. | Pass: XML parsed, both under 2 KB; two details and summary elements; git diff --check passed. |
+| R02 | On live Projects click each research card twice. | Overview opens and closes; label changes; cards work independently. | Not run. |
+| R03 | Tab to each card; use Enter and Space; disable JS and repeat. | Visible focus and native keyboard operation with or without JS. | Not run. |
+| R04 | Inspect open/closed cards at phone and laptop widths in Live Preview and live site. | Graphics scale; text stays readable; no horizontal overflow. | Not run. |
+| R05 | Fetch deployed Projects and both SVG images. | HTTP 200 and current expandable-card markup. | Not run. |
+
+Browser checks, console inspection, and Lighthouse remain unperformed for this
+change. Expanded text describes supplied project facts, not invented findings.
+
 | ID | Test and steps | Expected result | Actual result |
 | --- | --- | --- | --- |
 | G01 | Simulate every combination of the three player moves and three computer moves. | Three wins, three losses, three ties; correct score increment each time. | Pass in JavaScript VM with simulated DOM, October 29, 2026. |

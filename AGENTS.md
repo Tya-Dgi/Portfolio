@@ -46,6 +46,10 @@ Use a light, pastel-purple palette with a fresh springtime feel:
 
 Update this file when the student changes the design.
 
+Research writing cards use original pastel SVG concept illustrations and native
+details/summary controls to reveal project overviews. Illustrations are symbolic,
+not screenshots of student work. Keep descriptions grounded in supplied facts.
+
 ## Technical rules
 
 - Use plain HTML5, CSS, and JavaScript only. No React, Vue, Tailwind, Bootstrap,

@@ -61,6 +61,27 @@ footer span { padding-inline: .5rem; color: var(--purple); }
 .reset-button:hover, .reset-button:active { background: #57307e; }
 .game-note { color: var(--muted); font-size: .9rem; }
 .writing-cards { margin-top: 1.5rem; }
+.writing-cards { align-items: start; }
+.research-card { padding: 0; overflow: hidden; }
+.research-card summary { padding: 1.5rem; cursor: pointer; list-style: none; }
+.research-card summary::-webkit-details-marker { display: none; }
+.research-card summary:focus-visible { outline: 3px solid var(--purple); outline-offset: -6px; border-radius: 1.5rem; }
+.research-card summary:hover { background: #ffffff60; }
+.research-art { display: block; width: 100%; height: auto; border-radius: 1rem; margin-bottom: 1.5rem; }
+.research-teaser { display: block; color: var(--muted); }
+.read-more { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: var(--purple); font-weight: 700; margin-top: 1.5rem; }
+.expand-icon { font-size: 1.6rem; }
+.when-open { display: none; }
+.research-card[open] .when-open { display: inline; }
+.research-card[open] .when-closed { display: none; }
+.research-card[open] .expand-icon { transform: rotate(45deg); }
+.research-content { margin-inline: 1.5rem; padding-block: .5rem 1.5rem; border-top: 1px solid var(--muted); }
+.research-content h4 { margin-bottom: .4rem; font-size: 1.05rem; }
+.research-content p { margin-top: .4rem; }
+.research-highlight { background: white; padding: 1rem; border-radius: 1rem; margin-top: 1.5rem; }
+.research-paths { padding-left: 1.5rem; }
+.research-paths li { padding-left: .25rem; }
+.research-paths li::marker { color: var(--purple); font-weight: 750; }
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; }
   nav { text-align: right; }
